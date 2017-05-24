@@ -1,47 +1,39 @@
-<?php
-/**
- * The sidebar containing the main widget area
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
-
-if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
-	<div id="secondary" class="secondary">
-
-		<?php if ( has_nav_menu( 'primary' ) ) : ?>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<?php
-					// Primary navigation menu.
-					wp_nav_menu( array(
-						'menu_class'     => 'nav-menu',
-						'theme_location' => 'primary',
-					) );
-				?>
-			</nav><!-- .main-navigation -->
-		<?php endif; ?>
-
-		<?php if ( has_nav_menu( 'social' ) ) : ?>
-			<nav id="social-navigation" class="social-navigation" role="navigation">
-				<?php
-					// Social links navigation menu.
-					wp_nav_menu( array(
-						'theme_location' => 'social',
-						'depth'          => 1,
-						'link_before'    => '<span class="screen-reader-text">',
-						'link_after'     => '</span>',
-					) );
-				?>
-			</nav><!-- .social-navigation -->
-		<?php endif; ?>
-
-		<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-			<div id="widget-area" class="widget-area" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-1' ); ?>
-			</div><!-- .widget-area -->
-		<?php endif; ?>
-
-	</div><!-- .secondary -->
-
-<?php endif; ?>
+<div class="avatar-and-left-sidebar">
+    <div class="avatar-bg">
+        <div class="avatar-photo">
+            <img src="/wp-content/themes/customtheme/img/test.png">
+        </div>
+    </div>
+    <nav class="left-sidebar">
+        <a class="profile-click tablink" href="\profile.php">
+            <div class="tabs">
+                <div class="profile-tab">Profile</div>
+                <i class="fa fa-user fa-fw" aria-hidden="true"></i>
+            </div>
+        </a>
+        <a class="work-click tablink" href="\work.php">
+            <div class="tabs">
+                <div class="work-tab">Work</div>
+                <i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>
+            </div>
+        </a>
+        <a class="resume-click tablink" href="\resume.php">
+            <div class="tabs">
+                <div class="resume-tab">Resume</div>
+                <i class="fa fa-file-text fa-fw" aria-hidden="true"></i>
+            </div>
+        </a>
+        <a class="blog-click tablink" href="\blog.php">
+            <div class="tabs">
+                <div class="blog-tab">Blog</div>
+                <i class="fa fa-comment fa-fw blog" aria-hidden="true"></i>
+            </div>
+        </a>
+        <a class="contact-click tablink" href="\contact.php">
+            <div class="tabs">
+                <div class="contact-tab">Contact</div>
+                <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+            </div>
+        </a>
+    </nav>
+</div>

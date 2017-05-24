@@ -1,61 +1,57 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
-
-get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-
-			// End the loop.
-			endwhile;
-
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
-
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
-<?php get_footer(); ?>
+<?php get_header(); ?>
+<?php get_sidebar(); ?>
+<div class="content">
+            <div class="content-container">
+                <div class="profile-content">
+                    <div class="welcome-text">
+                        Hello, I am <div class="welcome-text-name">Robb Armstrong</div> Designer and Front-end Developer
+                    </div>
+                    <div class="border-under-welcome-text"></div>
+                    <div class="exp-text">
+                        I have ten years experience as a web/interface designer.
+                        I have a love of clean, elegant styling, and I have lots of experience
+                        in the production of CSS and (X)HTML for modern websites. I have a
+                        reasonable grasp of using JavaScript frameworks, specifically jQuery.
+                    </div>
+                    <div class="border-under-exp-text"></div>
+                    <div class="pt-title">Personal Info</div>
+                    <div class="border-under-pi-title"></div>
+                    <div class="data-inputs">
+                        <label>
+                            <span class="label-data-inputs">name</span>
+                            <input type="text" class="data-text-inputs name" placeholder="Robb Armstrong">
+                        </label>
+                    </div>
+                    <div class="data-inputs">
+                        <label>
+                            <span class="label-data-inputs">date of birth</span>
+                            <input type="text" class="data-text-inputs birth" placeholder="September 06, 1976">
+                        </label>
+                    </div>
+                    <div class="data-inputs">
+                        <label>
+                            <span class="label-data-inputs">e-mail</span>
+                            <input type="text" class="data-text-inputs e-mail" placeholder="info@yourdomain.com">
+                        </label>
+                    </div>
+                    <div class="data-inputs">
+                        <label>
+                            <span class="label-data-inputs">address</span>
+                            <input type="text" class="data-text-inputs address" placeholder="121 King St, Melbourne VIC">
+                        </label>
+                    </div>
+                    <div class="data-inputs">
+                        <label>
+                            <span class="label-data-inputs">phone</span>
+                            <input type="text" class="data-text-inputs phone" placeholder="012-3456-7890">
+                        </label>
+                    </div>
+                    <div class="data-inputs last">
+                        <label>
+                            <span class="label-data-inputs">website</span>
+                            <input type="text" class="data-text-inputs website" placeholder="www.themeforest.net">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <?php get_footer();?>
