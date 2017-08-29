@@ -24,42 +24,42 @@ jQuery(function ($) {
     }
 
     $(document).ready(function () {
-        if(window.location.pathname == "/profile.php"){
+        if(window.location.pathname == "/"){
             $('.profile-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
             DeleteActiveClassInLeftSidebar('.work-click', '.resume-click', '.blog-click', '.contact-click');
            }
         }
 
-        if(window.location.pathname == "/work.php"){
+        if(window.location.pathname == "/works/"){
             $('.work-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
                 DeleteActiveClassInLeftSidebar('.profile-click', '.resume-click', '.blog-click', '.contact-click');
             }
         }
 
-        if(window.location.pathname == "/resume.php"){
+        if(window.location.pathname == "/resumes/"){
             $('.resume-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
                 DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.blog-click', '.contact-click');
             }
         }
 
-        if(window.location.pathname == "/blog.php"){
+        if(window.location.pathname == "/blog/"){
             $('.blog-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
                 DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.resume-click', '.contact-click');
             }
         }
 
-        if(window.location.pathname == "/contact.php"){
+        if(window.location.pathname == "/contact/"){
             $('.contact-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
                 DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.resume-click', '.blog-click');
             }
         }
         
-        if(window.location.pathname == "/work.php") {
+        if(window.location.pathname == "/works/") {
             $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows', masonry: { columnWidth: 400}});
             $('.all-click').addClass('filter-type-active');
             $('.fa.fa-th').addClass('active');
@@ -121,7 +121,7 @@ jQuery(function ($) {
         // $('i.fa.fa-picture-o').hover(function() {
         //         $('i.fa.fa-picture-o').addClass('active');
         //     });
-        if(window.location.pathname == "/blog.php"){
+        if(window.location.pathname == "/blog/"){
             $('.standart-post-image.gallery').owlCarousel({
                         loop:true,
                         nav:true,
@@ -137,7 +137,7 @@ jQuery(function ($) {
 });
 
 
-if(window.location.pathname == "/contact.php"){
+if(window.location.pathname == "/contact/"){
     google.maps.event.addDomListener(window, 'load', init);
 
     function init() {

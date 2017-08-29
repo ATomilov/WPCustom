@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
+<?php get_sidebar(); 
+$front_page_obj = get_page_by_title( 'Profile', '', 'page' );
+$front_page_ID = $front_page_obj -> ID;
+remove_filter( 'the_content', 'wpautop' );
+?>
 <div class="content">
             <div class="content-container">
                 <div class="profile-content">
@@ -8,10 +12,7 @@
                     </div>
                     <div class="border-under-welcome-text"></div>
                     <div class="exp-text">
-                        I have ten years experience as a web/interface designer.
-                        I have a love of clean, elegant styling, and I have lots of experience
-                        in the production of CSS and (X)HTML for modern websites. I have a
-                        reasonable grasp of using JavaScript frameworks, specifically jQuery.
+                         <?php echo apply_filters('the_content', get_post_field('post_content', $front_page_ID));?>
                     </div>
                     <div class="border-under-exp-text"></div>
                     <div class="pt-title">Personal Info</div>

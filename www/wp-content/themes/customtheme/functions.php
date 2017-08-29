@@ -1,35 +1,41 @@
 <?php
 function enqueue_styles() {
-	wp_register_style('main-style', get_stylesheet_uri());
-	wp_enqueue_style('main-style');
-	wp_register_style('font-style', get_template_directory_uri() . '/css/font-awesome.min.css');
-	wp_enqueue_style('font-style');
-	wp_register_style('owl-style', get_template_directory_uri() . '/css/owl.carousel.min.css');
-	wp_enqueue_style('owl-style');
-	wp_register_style('owl-default-style', get_template_directory_uri() . '/css/owl.theme.default.min.css');
-	wp_enqueue_style('owl-default-style');
+	wp_enqueue_style('main-style', get_stylesheet_uri());
+	//wp_enqueue_style('main-style');
+	wp_enqueue_style('font-style', get_template_directory_uri() . '/css/font-awesome.min.css');
+	//wp_enqueue_style('font-style');
+	wp_enqueue_style('owl-style', get_template_directory_uri() . '/css/owl.carousel.min.css');
+	//wp_enqueue_style('owl-style');
+	wp_enqueue_style('owl-default-style', get_template_directory_uri() . '/css/owl.theme.default.min.css');
+	//wp_enqueue_style('owl-default-style');
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 function enqueue_scripts() {
-	wp_register_script('googleapis', '../customtheme/js/googleapis.js');
-	wp_enqueue_script('googleapis');
-	wp_register_script('isotope.pkgd', '../customtheme/js/isotope.pkgd.js');
-	wp_enqueue_script('isotope.pkgd');
-	wp_register_script('jquery-3.1.1', '../customtheme/js/jquery-3.1.1.js');
-	wp_enqueue_script('jquery-3.1.1');
-	wp_register_script('main', '../customtheme/js/main.js');
-	wp_enqueue_script('main');
-	wp_register_script('owl.carousel', '../customtheme/js/owl.carousel.js');
-	wp_enqueue_script('owl.carousel');
-	wp_register_script('owl.carousel.min', '../customtheme/js/owl.carousel.min.js');
-	wp_enqueue_script('owl.carousel.min');
+	wp_enqueue_script('jquery-3.2.1.min', get_template_directory_uri() . '/js/jquery-3.2.1.min.js');
+	//wp_enqueue_script('jquery-3.1.1');
+	wp_enqueue_script('googleapis', get_template_directory_uri() . '/js/googleapis.js');
+	//wp_enqueue_script('googleapis');
+	wp_enqueue_script('isotope.pkgd', get_template_directory_uri() . '/js/isotope.pkgd.js');
+	//wp_enqueue_script('isotope.pkgd');
+	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js');
+	//wp_enqueue_script('main');
+	wp_enqueue_script('owl.carousel', get_template_directory_uri() . '/js/owl.carousel.js');
+	//wp_enqueue_script('owl.carousel');
+	wp_enqueue_script('owl.carousel.min', get_template_directory_uri() . '/js/owl.carousel.min.js');
+	//wp_enqueue_script('owl.carousel.min');
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 
+function add_post_formats(){
+	add_theme_support('post-formats', array('link', 'gallery', 'quote'));
+}
+
+add_action('after_setup_theme', 'add_post_formats');
+
 add_action('init', 'resume_post_type');
 function resume_post_type(){
-	register_post_type('Resume', array(
+	register_post_type('resume', array(
 		'labels'             => array(
 			'name'               => 'Resume',
 			'singular_name'      => 'Resume',
@@ -55,7 +61,7 @@ function resume_post_type(){
 		'hierarchical'       => false,
 		'menu_position'      => 4,
 		'menu_icon'			 		 => 'dashicons-clipboard',
-		'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
+		'supports'           => array('title','editor','author','thumbnail','excerpt')
 	) );
 }
 add_action( 'init', 'resume_taxonomies', 0 );
@@ -73,7 +79,7 @@ function resume_taxonomies() {
 
 add_action('init', 'work_post_type');
 function work_post_type(){
-	register_post_type('Work', array(
+	register_post_type('work', array(
 		'labels'             => array(
 			'name'               => 'Work',
 			'singular_name'      => 'Work',
@@ -99,7 +105,7 @@ function work_post_type(){
 		'hierarchical'       => false,
 		'menu_position'      => 5,
 		'menu_icon'			 		 => 'dashicons-hammer',
-		'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
+		'supports'           => array('title','editor','author','thumbnail','excerpt')
 	) );
 }
 add_action( 'init', 'work_taxonomies', 0 );
@@ -114,5 +120,6 @@ function work_taxonomies() {
 				'rewrite' => true
 			) );
 }
+
 
 ?>

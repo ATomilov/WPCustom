@@ -158,13 +158,13 @@ a.tablink:hover .fa.fa-envelope {
 //     color: #2c383c !important;
 // }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
     outline: none;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #DDDDDD!important;
 }
 
 input[type=text]:hover, textarea:hover {
@@ -1030,6 +1030,22 @@ a.filter-portfolio {
     display: block;
     margin-bottom: 10px;
 }
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.message-name,
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.message-mail,
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.message-website {
+    width: 151px;
+}
+
+p:empty {
+  display: none;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.message-main-text {
+    width: 376px;
+    height: 166px;
+    margin-left: 0;
+}
+
 .message-main-text {
     border-radius: 5px;
     padding-bottom: 13px;
@@ -1055,6 +1071,9 @@ a.send-message {
     margin-bottom: 31px;
     font-weight: bold;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'open_sanslight';
 }
 
 .send-message-button:hover {
