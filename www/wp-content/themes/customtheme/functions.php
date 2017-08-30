@@ -64,6 +64,7 @@ function resume_post_type(){
 		'supports'           => array('title','editor','author','thumbnail','excerpt')
 	) );
 }
+
 add_action( 'init', 'resume_taxonomies', 0 );
 function resume_taxonomies() {
     register_taxonomy(

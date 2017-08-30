@@ -633,6 +633,9 @@ a.filter-portfolio {
     font-size: 15px;
     line-height: 1.6;
 }
+.education-item-description.last {
+    margin-bottom: 19px;
+}
 
 .border-under-education-item {
     width: 100%;
@@ -701,12 +704,7 @@ a.filter-portfolio {
     font-size: 18px;
 }
 
-.fa.fa-cloud,
-.fa.fa-meh-o,
-.fa.fa-desktop,
-.fa.fa-text-width,
-.fa.fa-comment,
-.fa.fa-picture-o {
+.services-items .fa {
     color: #c0c0c0;
     font-size: 36px;
 }
@@ -717,12 +715,7 @@ a.filter-portfolio {
     font-size: 18px;
 }
 
-.fa.fa-cloud.active,
-.fa.fa-meh-o.active,
-.fa.fa-desktop.active,
-.fa.fa-text-width.active,
-.fa.fa-comment.active,
-.fa.fa-picture-o.active {
+.services-items .active {
     color: #fff;
     font-size: 36px;
 }
@@ -768,12 +761,7 @@ a.filter-portfolio {
     color: #fff;
 }
 
-.services-item-with-title:hover .fa.fa-cloud,
-.services-item-with-title:hover .fa.fa-meh-o,
-.services-item-with-title:hover .fa.fa-desktop,
-.services-item-with-title:hover .fa.fa-text-width,
-.services-item-with-title:hover .fa.fa-comment,
-.services-item-with-title:hover .fa.fa-picture-o {
+.services-item-with-title:hover .fa {
     color: #fff;
 }
 
