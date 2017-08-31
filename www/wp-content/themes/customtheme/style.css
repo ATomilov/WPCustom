@@ -142,21 +142,9 @@ a.tablink:hover .work-tab,
 a.tablink:hover .resume-tab,
 a.tablink:hover .blog-tab,
 a.tablink:hover .contact-tab,
-a.tablink:hover .fa.fa-user,
-a.tablink:hover .fa.fa-briefcase,
-a.tablink:hover .fa.fa-file-text,
-a.tablink:hover .fa.fa-comment,
-a.tablink:hover .fa.fa-envelope {
+a.tablink:hover .fa {
     color: #2c383c!important;
 }
-
-// a.tablink:hover .fa.fa-user,
-// a.tablink:hover .fa.fa-briefcase,
-// a.tablink:hover .fa.fa-file-text,
-// a.tablink:hover .fa.fa-comment,
-// a.tablink:hover .fa.fa-envelope {
-//     color: #2c383c !important;
-// }
 
 input[type=text], input[type=email], textarea {
     -webkit-transition: all 0.30s ease-in-out;
@@ -167,7 +155,7 @@ input[type=text], input[type=email], textarea {
     border: 1px solid #DDDDDD!important;
 }
 
-input[type=text]:hover, textarea:hover {
+input[type=text]:hover, input[type=email], textarea:hover {
     border: 1px solid #ffd42d;
     -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -175,13 +163,17 @@ input[type=text]:hover, textarea:hover {
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
     box-shadow: 0 0 5px #ffd42d;
 }
 
 input[placeholder] {
     color: #484848;
     font-family: 'opensans_regular';
+}
+
+textarea {
+    resize: none;
 }
 
 /**************Profile Layout and Left Sidebar************************/
@@ -384,10 +376,7 @@ input.data-text-inputs {
     float: left;
 }
 
-.fa.fa-facebook,
-.fa.fa-dribbble,
-.fa.fa-pinterest,
-.fa.fa-twitter,
+.social-icons .fa,
 .fa.fa-arrow-circle-left,
 .fa.fa-arrow-circle-right {
     color: #2b373b;
@@ -399,10 +388,7 @@ input.data-text-inputs {
     color: #2c383c;
 }
 
-.fa.fa-facebook,
-.fa.fa-dribbble,
-.fa.fa-pinterest,
-.fa.fa-twitter {
+.social-icons .fa {
     font-size: 20px;
     font-weight: bold;
     width: 29px;

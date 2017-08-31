@@ -28,15 +28,15 @@ remove_filter('the_content', 'wpautop');
                 <div class="contact-data">
                     <div class="contact address">
                         <i class="fa fa-home contact" aria-hidden="true"></i>
-                        <div class="text-address">lorem ipsum street</div>
+                        <div class="text-address"><?php echo get_field('contact_address');?></div>
                     </div>
                     <div class="contact phone">
                         <i class="fa fa-phone" aria-hidden="true"></i>
-                        <div class="text-phone">+399 (500) 321 9548</div>
+                        <div class="text-phone"><?php echo get_field('contact_telephone_number');?></div>
                     </div>
                     <div class="contact mail">
                         <i class="fa fa-envelope fa-fw contact" aria-hidden="true"></i>
-                        <div class="text-mail">info@domain.com</div>
+                        <div class="text-mail"><?php echo get_field('contact_e-mail');?></div>
                     </div>
                 </div>
                 <div class="border-under-contact-title second"></div>

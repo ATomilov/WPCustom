@@ -1,3 +1,4 @@
+var marker_url = '<?php echo $marker_map_url;?>';
 jQuery(function ($) {
     function DeleteActiveClassWithoutImage(first, second, third, fourth, fifth){
         $(first).removeClass('filter-type-active');
@@ -151,7 +152,7 @@ if(window.location.pathname == "/contact/"){
             position: new google.maps.LatLng(-37.818460, 144.965180),
             map: map,
             icon: {
-                url: "../img/marker.png",
+                url: marker_url + '/img/marker.png',
                 scaledSize: new google.maps.Size(100, 100)
             }
         });

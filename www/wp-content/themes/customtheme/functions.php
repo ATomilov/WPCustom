@@ -1,4 +1,8 @@
 <?php
+$marker_map_url = get_template_directory_uri();
+
+add_theme_support('menus');
+
 function enqueue_styles() {
 	wp_enqueue_style('main-style', get_stylesheet_uri());
 	//wp_enqueue_style('main-style');
