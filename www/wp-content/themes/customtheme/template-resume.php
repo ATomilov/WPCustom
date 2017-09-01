@@ -9,7 +9,7 @@ $args = array(
 	'taxonomy' => 'resume_types',
 	'hide_empty' => false,
 );
-$terms = get_terms( $args );
+$terms_resume = get_terms( $args );
 $the_query = new WP_Query( array(
 	'post_type' => 'resume',
 	'orderby' => 'date',
@@ -73,12 +73,13 @@ $work_experience_query = new WP_Query( array(
                 <div class="top-right-navigation">
                     <div class="text-top-right-navigation">Go to next / previous page</div>
                     <div class="navigation-arrow">
-                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                        <a href="<?php echo $menu_items[1]->url;?>">
+                            <i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
                         <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="border-under-resume-title"></div>
-                <div class="pt-title"><?php echo $terms[0] -> name;?></div>
+                <div class="pt-title"><?php echo $terms_resume[0] -> name;?></div>
                 <div class="border-under-ed-title"></div>
 	            <?php while ( $the_query->have_posts() ) :
 	            $the_query->the_post();?>
@@ -96,7 +97,7 @@ $work_experience_query = new WP_Query( array(
                     echo ' last'; ?>"></div>
 	            <?php endwhile;
 	            wp_reset_postdata();?>
-                <div class="pt-title"><?php echo $terms[2] -> name;?></div>
+                <div class="pt-title"><?php echo $terms_resume[2] -> name;?></div>
                 <div class="border-under-skills-title"></div>
                 <?php while ( $skills_query->have_posts() ) :
 	            $skills_query->the_post();?>
@@ -114,7 +115,7 @@ $work_experience_query = new WP_Query( array(
                 <?php endwhile;
                 wp_reset_postdata();?>
                 <div class="border-under-education-item last"></div>
-                <div class="pt-title"><?php echo $terms[1] -> name;?></div>
+                <div class="pt-title"><?php echo $terms_resume[1] -> name;?></div>
                 <div class="border-under-services-title"></div>
                 <div class="services-items">
                     <?php while ( $services_query->have_posts() ) :
@@ -128,7 +129,7 @@ $work_experience_query = new WP_Query( array(
                     wp_reset_postdata();?>
                 </div>
                 <div class="border-under-education-item last services"></div>
-                <div class="pt-title work"><?php echo $terms[3] -> name;?></div>
+                <div class="pt-title work"><?php echo $terms_resume[3] -> name;?></div>
                 <div class="border-under-work-exp-title"></div>
                 <?php while ( $work_experience_query->have_posts() ) :
 	            $work_experience_query->the_post();?>

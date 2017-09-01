@@ -1,4 +1,5 @@
 <?php
+global $menu_items;
 $menu_items = wp_get_nav_menu_items('Left Sidebar Menu');
 ?>
 
