@@ -1,7 +1,8 @@
 <?php
 global $marker_map_url;
 $marker_map_url = get_template_directory_uri();
-add_theme_support('menus');
+register_nav_menu('leftsidebar','Left Sidebar Menu');
+//add_theme_support('menus');
 
 function enqueue_styles() {
 	wp_enqueue_style('main-style', get_stylesheet_uri());

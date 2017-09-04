@@ -178,11 +178,7 @@ textarea {
 
 /**************Profile Layout and Left Sidebar************************/
 
-.fa.fa-user,
-.fa.fa-briefcase,
-.fa.fa-file-text,
-.fa.fa-comment.fa-fw.blog,
-.fa.fa-envelope {
+.tabs .fa {
     display: inline-block;
     color: #d1d1d1;
     width: 50px;
@@ -212,11 +208,7 @@ textarea {
     background-color: #ffd42d;
 }
 
-.tab-active .tabs .fa.fa-user,
-.tab-active .tabs .fa.fa-briefcase,
-.tab-active .tabs .fa.fa-file-text,
-.tab-active .tabs .fa.fa-comment,
-.tab-active .tabs .fa.fa-envelope {
+.tab-active .tabs .fa {
     color: #2c383c !important;
 }
 

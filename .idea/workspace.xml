@@ -14,18 +14,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2736">
-              <caret line="144" column="21" lean-forward="false" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
+            <state relative-caret-position="192">
+              <caret line="805" column="14" lean-forward="false" selection-start-line="805" selection-start-column="4" selection-end-line="805" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+            <state relative-caret-position="209">
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -34,14 +34,14 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1140">
+            <state relative-caret-position="0">
               <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/functions.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -54,7 +54,7 @@
       <file leaf-file-name="template-resume.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-resume.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="19">
               <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="98" selection-end-column="38" />
               <folding />
             </state>
@@ -64,7 +64,7 @@
       <file leaf-file-name="template-work.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-work.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
+            <state relative-caret-position="3116">
               <caret line="164" column="50" lean-forward="false" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
               <folding />
             </state>
@@ -107,6 +107,7 @@
     <findStrings>
       <find>education-item-description</find>
       <find>fa-facebook</find>
+      <find>fa-comment</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,11 +121,11 @@
       <list>
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/template-contact.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css" />
-        <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/sidebar.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/js/main.js" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/template-resume.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/template-work.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/functions.php" />
+        <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/sidebar.php" />
       </list>
     </option>
   </component>
@@ -183,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +231,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,11 +265,12 @@
       <workItem from="1504124155093" duration="7272000" />
       <workItem from="1504196431559" duration="7659000" />
       <workItem from="1504292237962" duration="6782000" />
+      <workItem from="1504521297132" duration="534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31456000" />
+    <option name="totallyTimeSpent" value="31990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -306,6 +308,78 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2736">
+          <caret line="144" column="21" lean-forward="false" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-resume.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1843">
+          <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="98" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3116">
+          <caret line="164" column="50" lean-forward="false" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="83" lean-forward="false" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8360">
+          <caret line="447" column="0" lean-forward="false" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2736">
@@ -490,14 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2736">
-          <caret line="144" column="21" lean-forward="false" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-includes/script-loader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -508,31 +574,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1140">
+        <state relative-caret-position="0">
           <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-resume.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="98" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-work.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
+        <state relative-caret-position="3116">
           <caret line="164" column="50" lean-forward="false" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
           <folding />
         </state>
@@ -542,6 +592,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-resume.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="98" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="805" column="14" lean-forward="false" selection-start-line="805" selection-start-column="4" selection-end-line="805" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding />
         </state>
       </provider>
