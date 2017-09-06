@@ -9,13 +9,7 @@ get_sidebar();
         <div class="content-container-blog">
             <div class="blog-content">
                 <div class="blog-title">BLOG</div>
-                <div class="top-right-navigation">
-                    <div class="text-top-right-navigation">Go to next / previous page</div>
-                    <div class="navigation-arrow">
-                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    </div>
-                </div>
+	            <?php get_template_part('navigation');?>
                 <div class="border-under-blog-title"></div>
                 <div class="standart-post-item">
                     <div class="standart-post-image">

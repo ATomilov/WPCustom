@@ -80,13 +80,7 @@ $wallpapers_query = new WP_Query( array(
             <div class="content-container-work">
                 <div class="work-content">
                     <div class="work-title">PORTFOLIO</div>
-                    <div class="top-right-navigation">
-                        <div class="text-top-right-navigation">Go to next / previous page</div>
-                        <div class="navigation-arrow">
-                            <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </div>
-                    </div>
+	                <?php get_template_part('navigation');?>
                     <div class="border-under-work-title"></div>
                     <div class="grid-work">
                         <div class="grid-work-menu-list">

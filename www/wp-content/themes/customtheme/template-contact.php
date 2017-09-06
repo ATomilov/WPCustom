@@ -12,13 +12,7 @@ remove_filter('the_content', 'wpautop');
             <div class="content-container">
                 <div class="work-content">
                 <div class="work-title">CONTACT US</div>
-                <div class="top-right-navigation">
-                    <div class="text-top-right-navigation">Go to next / previous page</div>
-                    <div class="navigation-arrow">
-                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                    </div>
-                </div>
+	            <?php get_template_part('navigation');?>
                 <div class="border-under-contact-title"></div>
                 <div id="google-map"></div>
                 <div class="pt-title contact">Contact Info</div>

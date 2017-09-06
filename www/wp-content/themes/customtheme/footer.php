@@ -1,10 +1,14 @@
-  <div class="footer">
-    <div class="copyright">&#169; 2014 Robb Armstrong,  All Rights Reserved</div>
+<?php $sources = get_field('social_networks','options');?>
+<div class="footer">
+    <div class="copyright">
+        &#169; 2014 Robb Armstrong,  All Rights Reserved
+    </div>
     <div class="social-icons">
-        <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
-        <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
-        <i class="fa fa-dribbble fa-fw" aria-hidden="true"></i>
-        <i class="fa fa-pinterest fa-fw" aria-hidden="true"></i>
+        <?php foreach ($sources as $src){?>
+            <a class="footer-link" href="<?php echo $src['link_for_social_network'];?>" target="_blank">
+                <i class="fa <?php echo $src['icon_for_social_network']; ?> fa-fw" aria-hidden="true"></i>
+            </a>
+        <?php }?>
     </div>
 	</div>
     <?php wp_footer(); ?>

@@ -128,6 +128,26 @@ function work_taxonomies() {
 			) );
 }
 
-add_image_size( 'portfolio-thumb', 200, 160, true );
+add_image_size('portfolio-thumb', 200, 160, true);
 
+add_image_size('avatar-thumb', 120, 120, true);
+
+if( function_exists('acf_add_options_page') ) {
+
+	$parent = acf_add_options_page('Theme Settings');
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Left Sidebar Avatar Settings',
+		'menu_title'	=> 'Avatar Settings',
+		'parent_slug'	=> $parent['menu_slug'],
+		'position' => false
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> $parent['menu_slug'],
+		'position' => false
+	));
+}
 ?>
