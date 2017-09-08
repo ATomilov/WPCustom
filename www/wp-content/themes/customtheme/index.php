@@ -3,6 +3,7 @@
 $front_page_obj = get_page_by_title( 'Profile', '', 'page' );
 $front_page_ID = $front_page_obj -> ID;
 remove_filter( 'the_content', 'wpautop' );
+$personal_info = get_field('personal_info',$front_page_ID);
 ?>
 <div class="content">
             <div class="content-container">
@@ -17,42 +18,14 @@ remove_filter( 'the_content', 'wpautop' );
                     <div class="border-under-exp-text"></div>
                     <div class="pt-title">Personal Info</div>
                     <div class="border-under-pi-title"></div>
-                    <div class="data-inputs">
-                        <label>
-                            <span class="label-data-inputs">name</span>
-                            <input type="text" class="data-text-inputs name" placeholder="Robb Armstrong">
-                        </label>
-                    </div>
-                    <div class="data-inputs">
-                        <label>
-                            <span class="label-data-inputs">date of birth</span>
-                            <input type="text" class="data-text-inputs birth" placeholder="September 06, 1976">
-                        </label>
-                    </div>
-                    <div class="data-inputs">
-                        <label>
-                            <span class="label-data-inputs">e-mail</span>
-                            <input type="text" class="data-text-inputs e-mail" placeholder="info@yourdomain.com">
-                        </label>
-                    </div>
-                    <div class="data-inputs">
-                        <label>
-                            <span class="label-data-inputs">address</span>
-                            <input type="text" class="data-text-inputs address" placeholder="121 King St, Melbourne VIC">
-                        </label>
-                    </div>
-                    <div class="data-inputs">
-                        <label>
-                            <span class="label-data-inputs">phone</span>
-                            <input type="text" class="data-text-inputs phone" placeholder="012-3456-7890">
-                        </label>
-                    </div>
-                    <div class="data-inputs last">
-                        <label>
-                            <span class="label-data-inputs">website</span>
-                            <input type="text" class="data-text-inputs website" placeholder="www.themeforest.net">
-                        </label>
-                    </div>
+                    <?php foreach ($personal_info as $personal){?>
+                        <div class="data-inputs">
+                            <label>
+                                <span class="label-data-inputs"><?php echo $personal['personal_info_label'];?></span>
+                                <input type="text" class="data-text-inputs name" value="<?php echo $personal['personal_info_text'];?>"readonly>
+                            </label>
+                        </div>
+                    <?php }?>
                 </div>
             </div>
             <?php get_footer();?>

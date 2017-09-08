@@ -319,7 +319,7 @@ textarea {
 }
 
 .data-text-inputs.name {
-    width: 141px;
+    /*width: 141px;*/
 }
 
 .data-text-inputs.birth {
@@ -359,6 +359,7 @@ input.data-text-inputs {
 
 a.footer-link {
     text-decoration: none;
+    margin-right: 16px;
 }
 
 .social-icons .fa,
@@ -376,9 +377,8 @@ a.footer-link {
 .social-icons .fa {
     font-size: 20px;
     font-weight: bold;
-    width: 29px;
+    width: 12px;
     display: inline-block;
-    padding-right: 11px;
 }
 
 .data-inputs.last {
@@ -396,7 +396,7 @@ a.footer-link {
 .social-icons {
     float: right;
     padding-top: 27px;
-    padding-right: 22px;
+    padding-right: 19px;
 }
 
 /***************Work Layout*********************/
@@ -1040,6 +1040,10 @@ a.send-message {
 .single-post-image {
     width: 640px;
     margin-bottom: 10px;
+}
+
+.single-post-image img {
+    width: 100%;
 }
 
 .standart-post-title-info-and-description.single-post {

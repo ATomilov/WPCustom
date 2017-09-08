@@ -132,6 +132,8 @@ add_image_size('portfolio-thumb', 200, 160, true);
 
 add_image_size('avatar-thumb', 120, 120, true);
 
+add_image_size("blog's-post-thumb", 265, 194, true);
+
 if( function_exists('acf_add_options_page') ) {
 
 	$parent = acf_add_options_page('Theme Settings');
