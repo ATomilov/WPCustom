@@ -5,7 +5,10 @@
 get_header();
 get_sidebar();
 $blog_page_obj = get_page_by_title( 'Blog', '', 'page' );
-$standart_posts = new WP_Query( array(
+$standart_posts = get_posts( array(
+    'posts_per_page' => 2,
+    'orderby' => 'date',
+    'order' => 'ASC',
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'post_format',
@@ -19,6 +22,37 @@ $standart_posts = new WP_Query( array(
 		)
 	)
 ) );
+$gallery_posts = new WP_Query( array(
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'post_format',
+			'field' => 'slug',
+			'terms' =>'post-format-gallery'
+		)
+	)
+) );
+$link_posts = new WP_Query( array(
+	'orderby' => 'date',
+	'order' => 'DESC',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'post_format',
+			'field' => 'slug',
+			'terms' =>'post-format-link'
+		)
+	)
+) );
+$quote_posts = new WP_Query( array(
+	'orderby' => 'date',
+	'order' => 'DESC',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'post_format',
+			'field' => 'slug',
+			'terms' =>'post-format-quote'
+		)
+	)
+) );
 remove_filter( 'the_content', 'wpautop' );
 ?>
 <div class="content-blog">
@@ -27,17 +61,16 @@ remove_filter( 'the_content', 'wpautop' );
                 <div class="blog-title"><?php echo strtoupper($blog_page_obj -> post_title);?></div>
 	            <?php get_template_part('navigation');?>
                 <div class="border-under-blog-title"></div>
-                <?php while ( $standart_posts->have_posts() ) :
-                    $standart_posts->the_post();
-	                $standart_posts_id = $standart_posts->ID();
-	                $standart_posts_image_id = get_field('blog_posts_thumb',$standart_posts_id);
-	                $standart_posts_image_url = wp_get_attachment_image_src($standart_posts_image_id,"blog's-post-thumb");?>
+                <?php setup_postdata($post = $standart_posts[0]);
+                $post_id = $post->ID;
+                $post_image_id = get_field('blog_posts_thumb',$post_id);
+                $post_image_url = wp_get_attachment_image_src($post_image_id,"blog's-post-thumb");?>
                         <div class="standart-post-item">
                             <div class="standart-post-image">
-                                <img src="<?php echo $standart_posts_image_url[0];?>">
+                                <img src="<?php echo $post_image_url[0];?>">
                             </div>
                             <div class="standart-post-title-info-and-description">
-                                <a href="<?php the_permalink();?>">
+                                <a class="standart-post-permalink" href="<?php the_permalink();?>">
                                     <div class="standart-post-title"><?php the_title();?></div>
                                 </a>
 
@@ -55,81 +88,95 @@ remove_filter( 'the_content', 'wpautop' );
                                         <div class="standart-post-number-of-comments"><?php echo strtolower(comments_number());?></div>
                                     </div>
                                 </div>
-                                <div class="standart-post-description"><?php the_content();?></div>
+                                <div class="standart-post-description"><?php echo words_limit(get_the_content(),46);?></div>
                             </div>
                         </div>
-                    <?php endwhile;
-                    wp_reset_postdata();?>
+                    <?php wp_reset_postdata();?>
                 <div class="border-post"></div>
                 <div class="link-under-post">
-                    <img src="./img/link.png">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <?php if ($link_posts->have_posts()){
+                        $link_posts->the_post();
+                        $link_posts_id = $link_posts->ID();?>
+                        <a href="http://<?php the_content();?>" target="_blank">
+                            <div class="link-post-content"><?php the_content();?></div>
+                        </a>
+                    <?php }
+                    wp_reset_postdata();?>
                 </div>
-                <div class="standart-post-item">
-                    <div class="standart-post-image gallery owl-carousel owl-theme">
-                        <img src="<?php echo get_template_directory_uri();?>/img/standart_post_image.png">
-                        <img src="<?php echo get_template_directory_uri();?>/img/standart_post_image.png">
-                        <img src="<?php echo get_template_directory_uri();?>/img/standart_post_image.png">
-                        <img src="<?php echo get_template_directory_uri();?>/img/standart_post_image.png">
-                    </div>
-                    <div class="standart-post-title-info-and-description">
-                        <div class="standart-post-title">Gallery Post</div>
-                        <div class="standart-post-info">
-                            <div class="standart-post-date-and-calendar">
-                                <i class="fa fa-calendar-o blog" aria-hidden="true"></i>
-                                <div class="standart-post-date">30 march</div>
+                <?php while ( $gallery_posts->have_posts() ) :
+                    $gallery_posts->the_post();
+	                $gallery_posts_id = $gallery_posts->ID();
+	                $images = get_field('images_gallery',$gallery_posts_id);?>
+                        <div class="standart-post-item">
+                            <div class="standart-post-image gallery owl-carousel owl-theme">
+                            <?php foreach ($images as $image){?>
+                                <img src="<?php echo $image['url'];?>">
+                            <?php }?>
                             </div>
-                            <div class="standart-post-user-icon-and-nickname">
-                                <i class="fa fa-user blog" aria-hidden="true"></i>
-                                <div class="standart-post-nickname">Admin</div>
-                            </div>
-                            <div class="standart-post-comments">
-                                <i class="fa fa-comments blog" aria-hidden="true"></i>
-                                <div class="standart-post-number-of-comments">2 comments</div>
+                            <div class="standart-post-title-info-and-description">
+                                <div class="standart-post-title"><?php the_title();?></div>
+                                <div class="standart-post-info">
+                                    <div class="standart-post-date-and-calendar">
+                                        <i class="fa fa-calendar-o blog" aria-hidden="true"></i>
+                                        <div class="standart-post-date"><?php the_date('j F');?></div>
+                                    </div>
+                                    <div class="standart-post-user-icon-and-nickname">
+                                        <i class="fa fa-user blog" aria-hidden="true"></i>
+                                        <div class="standart-post-nickname"><?php the_author();?></div>
+                                    </div>
+                                    <div class="standart-post-comments">
+                                        <i class="fa fa-comments blog" aria-hidden="true"></i>
+                                        <div class="standart-post-number-of-comments"><?php echo strtolower(comments_number());?></div>
+                                    </div>
+                                </div>
+                                <div class="standart-post-description"><?php echo words_limit(get_the_content(),46);?></div>
                             </div>
                         </div>
-                        <div class="standart-post-description">
-                            This is Photoshop's version  of Lorem Ipsum.
-                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-                            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-                            amet mauris. Morbi accumsan ipsum velit.
-                        </div>
-                    </div>
-                </div>
+                <?php endwhile;
+                wp_reset_postdata();?>
                 <div class="border-post"></div>
                 <div class="quote-under-gallery">
-                    <img src="./img/quote.png">
+                    <?php if ($quote_posts->have_posts()){
+                        $quote_posts->the_post();
+	                    $quote_posts_id = $quote_posts->ID();?>
+                            <div class="quote-text"><?php the_content();?></div>
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            <div class="quote-author"><?php echo get_field('author_quote');?></div>
+                    <?php }
+                    wp_reset_postdata();?>
                 </div>
                 <div class="border-post gallery"></div>
-                <div class="standart-post-item last">
-                    <div class="standart-post-image">
-                        <img src="<?php echo get_template_directory_uri();?>/img/standart_post_image.png">
-                    </div>
-                    <div class="standart-post-title-info-and-description">
-                        <div class="standart-post-title">Another Standard Post</div>
-                        <div class="standart-post-info">
-                            <div class="standart-post-date-and-calendar">
-                                <i class="fa fa-calendar-o blog" aria-hidden="true"></i>
-                                <div class="standart-post-date">30 march</div>
-                            </div>
-                            <div class="standart-post-user-icon-and-nickname">
-                                <i class="fa fa-user blog" aria-hidden="true"></i>
-                                <div class="standart-post-nickname">Admin</div>
-                            </div>
-                            <div class="standart-post-comments">
-                                <i class="fa fa-comments blog" aria-hidden="true"></i>
-                                <div class="standart-post-number-of-comments">2 comments</div>
-                            </div>
+	            <?php setup_postdata($post = $standart_posts[1]);
+	            $post_id = $post->ID;
+	            $post_image_id = get_field('blog_posts_thumb',$post_id);
+	            $post_image_url = wp_get_attachment_image_src($post_image_id,"blog's-post-thumb");?>
+                    <div class="standart-post-item last">
+                        <div class="standart-post-image">
+                            <img src="<?php echo $post_image_url[0];?>">
                         </div>
-                        <div class="standart-post-description">
-                            This is Photoshop's version  of Lorem Ipsum.
-                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-                            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-                            amet mauris. Morbi accumsan ipsum velit.
+                        <div class="standart-post-title-info-and-description">
+                            <a class="standart-post-permalink" href="<?php the_permalink();?>">
+                                <div class="standart-post-title"><?php the_title();?></div>
+                            </a>
+                            <div class="standart-post-info">
+                                <div class="standart-post-date-and-calendar">
+                                    <i class="fa fa-calendar-o blog" aria-hidden="true"></i>
+                                    <div class="standart-post-date"><?php echo get_the_date('j F');?></div>
+                                </div>
+                                <div class="standart-post-user-icon-and-nickname">
+                                    <i class="fa fa-user blog" aria-hidden="true"></i>
+                                    <div class="standart-post-nickname"><?php the_author();?></div>
+                                </div>
+                                <div class="standart-post-comments">
+                                    <i class="fa fa-comments blog" aria-hidden="true"></i>
+                                    <div class="standart-post-number-of-comments"><?php echo strtolower(comments_number());?></div>
+                                </div>
+                            </div>
+                            <div class="standart-post-description"><?php echo words_limit(get_the_content(),46);?></div>
                         </div>
                     </div>
-                </div>
+                <?php wp_reset_postdata();?>
             </div>
         </div>
         <?php get_footer();?>

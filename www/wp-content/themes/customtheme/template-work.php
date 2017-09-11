@@ -111,9 +111,26 @@ $wallpapers_query = new WP_Query( array(
                                 $branding_query->the_post();
                                 $branding_id = $branding_query->ID();
                                 $branding_image_id = get_field('image_to_portfolio',$branding_id);
-                                $branding_image_url = wp_get_attachment_image_src($branding_image_id,'portfolio-thumb');?>
+                                $branding_image_url = wp_get_attachment_image_src($branding_image_id,'portfolio-thumb');
+	                            $terms = get_the_terms($branding_id, 'work_types');?>
                                     <div class="grid-work-item branding">
                                         <img src="<?php echo $branding_image_url[0];?>">
+                                        <div class="info-picture-portfolio">
+                                            <div class="picture-title">
+			                                    <?php echo the_title();?>
+                                            </div>
+                                            <div class="taxonomy-text">
+			                                    <?php if(count($terms)!=1) {
+				                                    foreach ( $terms as $term ) {
+					                                    echo $term->slug;
+					                                    echo ', ';
+				                                    }
+			                                    }
+			                                    else {
+			                                        echo $terms[0]->slug;
+                                                }?>
+                                            </div>
+                                        </div>
                                     </div>
                             <?php endwhile;
                             wp_reset_postdata();?>
@@ -121,9 +138,26 @@ $wallpapers_query = new WP_Query( array(
 		                        $wallpapers_query->the_post();
 		                        $wallpapers_id = $wallpapers_query->ID();
 		                        $wallpapers_image_id = get_field('image_to_portfolio',$wallpapers_id);
-		                        $wallpapers_image_url = wp_get_attachment_image_src($wallpapers_image_id,'portfolio-thumb');?>
+		                        $wallpapers_image_url = wp_get_attachment_image_src($wallpapers_image_id,'portfolio-thumb');
+		                        $terms = get_the_terms($wallpapers_id, 'work_types');?>
                                     <div class="grid-work-item wallpapers">
                                         <img src="<?php echo $wallpapers_image_url[0];?>">
+                                        <div class="info-picture-portfolio">
+                                            <div class="picture-title">
+			                                    <?php echo the_title();?>
+                                            </div>
+                                            <div class="taxonomy-text">
+	                                            <?php if(count($terms)!=1) {
+		                                            foreach ( $terms as $term ) {
+			                                            echo $term->slug;
+			                                            echo ', ';
+		                                            }
+	                                            }
+	                                            else {
+		                                            echo $terms[0]->slug;
+	                                            }?>
+                                            </div>
+                                        </div>
                                     </div>
 	                        <?php endwhile;
 	                        wp_reset_postdata();?>
@@ -131,9 +165,26 @@ $wallpapers_query = new WP_Query( array(
 		                        $photography_query->the_post();
 		                        $photography_id = $photography_query->ID();
 		                        $photography_image_id = get_field('image_to_portfolio',$photography_id);
-		                        $photography_image_url = wp_get_attachment_image_src($photography_image_id,'portfolio-thumb');?>
+		                        $photography_image_url = wp_get_attachment_image_src($photography_image_id,'portfolio-thumb');
+		                        $terms = get_the_terms($photography_id, 'work_types');?>
                                 <div class="grid-work-item photography">
                                     <img src="<?php echo $photography_image_url[0];?>">
+                                    <div class="info-picture-portfolio">
+                                        <div class="picture-title">
+			                                <?php echo the_title();?>
+                                        </div>
+                                        <div class="taxonomy-text">
+	                                        <?php if(count($terms)!=1) {
+		                                        foreach ( $terms as $term ) {
+			                                        echo $term->slug;
+			                                        echo ', ';
+		                                        }
+	                                        }
+	                                        else {
+		                                        echo $terms[0]->slug;
+	                                        }?>
+                                        </div>
+                                    </div>
                                 </div>
 	                        <?php endwhile;
 	                        wp_reset_postdata();?>
@@ -141,9 +192,26 @@ $wallpapers_query = new WP_Query( array(
 		                        $illustrations_query->the_post();
 		                        $illustrations_id = $illustrations_query->ID();
 		                        $illustrations_image_id = get_field('image_to_portfolio',$illustrations_id);
-		                        $illustrations_image_url = wp_get_attachment_image_src($illustrations_image_id,'portfolio-thumb');?>
+		                        $illustrations_image_url = wp_get_attachment_image_src($illustrations_image_id,'portfolio-thumb');
+		                        $terms = get_the_terms($illustrations_id, 'work_types');?>
                                 <div class="grid-work-item illustrations">
                                     <img src="<?php echo $illustrations_image_url[0];?>">
+                                    <div class="info-picture-portfolio">
+                                        <div class="picture-title">
+			                                <?php echo the_title();?>
+                                        </div>
+                                        <div class="taxonomy-text">
+	                                        <?php if(count($terms)!=1) {
+		                                        foreach ( $terms as $term ) {
+			                                        echo $term->slug;
+			                                        echo ', ';
+		                                        }
+	                                        }
+	                                        else {
+		                                        echo $terms[0]->slug;
+	                                        }?>
+                                        </div>
+                                    </div>
                                 </div>
 	                        <?php endwhile;
 	                        wp_reset_postdata();?>
@@ -151,9 +219,26 @@ $wallpapers_query = new WP_Query( array(
 		                        $logos_query->the_post();
 		                        $logos_id = $logos_query->ID();
 		                        $logos_image_id = get_field('image_to_portfolio',$logos_id);
-		                        $logos_image_url = wp_get_attachment_image_src($logos_image_id,'portfolio-thumb');?>
+		                        $logos_image_url = wp_get_attachment_image_src($logos_image_id,'portfolio-thumb');
+		                        $terms = get_the_terms($logos_id, 'work_types');?>
                                 <div class="grid-work-item logos">
                                     <img src="<?php echo $logos_image_url[0];?>">
+                                    <div class="info-picture-portfolio">
+                                        <div class="picture-title">
+                                            <?php echo the_title();?>
+                                        </div>
+                                        <div class="taxonomy-text">
+	                                        <?php if(count($terms)!=1) {
+		                                        foreach ( $terms as $term ) {
+			                                        echo $term->slug;
+			                                        echo ', ';
+		                                        }
+	                                        }
+	                                        else {
+		                                        echo $terms[0]->slug;
+	                                        }?>
+                                        </div>
+                                    </div>
                                 </div>
 	                        <?php endwhile;
 	                        wp_reset_postdata();?>

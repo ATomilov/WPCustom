@@ -152,4 +152,15 @@ if( function_exists('acf_add_options_page') ) {
 		'position' => false
 	));
 }
+
+function words_limit($input_text, $limit, $end_str = '') {
+	$input_text = strip_tags($input_text);
+	$words = explode(' ', $input_text); // создаём из строки массив слов
+	if ($limit < 1 || sizeof($words) <= $limit) { // если лимит указан не верно или количество слов меньше лимита, то возвращаем исходную строку
+		return $input_text;
+	}
+	$words = array_slice($words, 0, $limit); // укорачиваем массив до нужной длины
+	$out = implode(' ', $words);
+	return $out.$end_str; //возвращаем строку + символ/строка завершения
+}
 ?>
