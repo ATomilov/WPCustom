@@ -47,6 +47,7 @@ $single_posts_image_url = wp_get_attachment_image_src($single_posts_image_id,"bl
 					</div>
 				</div>
 				<div class="border-under-single-post-text"></div>
+				<?php comments_template(); ?>
 				<div class="pt-title single-post message"><?php echo strtolower(comments_number());?></div>
 				<div class="comment-pattern">
 					<div class="border-for-avatar">

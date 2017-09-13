@@ -1214,7 +1214,7 @@ a.send-message {
     margin-bottom: 6px;
 }
 
-a.reply {
+a.reply, .comment-reply-link {
     text-decoration: none;
     color: #2b373b;
 }

@@ -155,12 +155,12 @@ if( function_exists('acf_add_options_page') ) {
 
 function words_limit($input_text, $limit, $end_str = '') {
 	$input_text = strip_tags($input_text);
-	$words = explode(' ', $input_text); // создаём из строки массив слов
-	if ($limit < 1 || sizeof($words) <= $limit) { // если лимит указан не верно или количество слов меньше лимита, то возвращаем исходную строку
+	$words = explode(' ', $input_text);
+	if ($limit < 1 || sizeof($words) <= $limit) {
 		return $input_text;
 	}
-	$words = array_slice($words, 0, $limit); // укорачиваем массив до нужной длины
+	$words = array_slice($words, 0, $limit);
 	$out = implode(' ', $words);
-	return $out.$end_str; //возвращаем строку + символ/строка завершения
+	return $out.$end_str;
 }
 ?>
