@@ -14,8 +14,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="1189" column="22" lean-forward="true" selection-start-line="1189" selection-start-column="22" selection-end-line="1189" selection-end-column="22" />
+            <state relative-caret-position="19">
+              <caret line="569" column="25" lean-forward="false" selection-start-line="569" selection-start-column="25" selection-end-line="569" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -24,7 +24,7 @@
       <file leaf-file-name="template-resume.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-resume.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="19">
               <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="41" selection-end-column="25" />
               <folding />
             </state>
@@ -34,41 +34,31 @@
       <file leaf-file-name="content-single-post.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/content-single-post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="122" column="16" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="124" selection-end-column="20" />
+            <state relative-caret-position="511">
+              <caret line="109" column="51" lean-forward="false" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comments.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/comments.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-blog.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-blog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="100" column="78" lean-forward="false" selection-start-line="100" selection-start-column="78" selection-end-line="100" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="951">
-              <caret line="250" column="0" lean-forward="true" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+            <state relative-caret-position="-35">
+              <caret line="213" column="95" lean-forward="true" selection-start-line="213" selection-start-column="95" selection-end-line="213" selection-end-column="151" />
               <folding>
-                <marker date="1505344599754" expanded="true" signature="10008:10017" ph="..." />
+                <marker date="1506944925272" expanded="true" signature="9977:9999" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/comments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,8 +125,8 @@
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/formatting.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/content-single-post.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css" />
-        <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/functions.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/comments.php" />
+        <option value="$PROJECT_DIR$/www/wp-content/themes/customtheme/functions.php" />
       </list>
     </option>
   </component>
@@ -195,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,10 +218,17 @@
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="customtheme" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="wpcustom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wpcustom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -275,24 +271,27 @@
       <workItem from="1505138879672" duration="14665000" />
       <workItem from="1505311908946" duration="756000" />
       <workItem from="1505314184228" duration="10347000" />
+      <workItem from="1505505594856" duration="3855000" />
+      <workItem from="1505587259339" duration="1435000" />
+      <workItem from="1506941531110" duration="3618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88124000" />
+    <option name="totallyTimeSpent" value="97032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -300,6 +299,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -317,29 +317,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/wp-settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8360">
-          <caret line="447" column="0" lean-forward="false" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2736">
-          <caret line="144" column="21" lean-forward="false" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -398,7 +375,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
-            <marker date="1505344599754" expanded="true" signature="10008:10017" ph="..." />
+            <marker date="1506944925272" expanded="true" signature="9977:9999" ph="..." />
           </folding>
         </state>
       </provider>
@@ -423,7 +400,7 @@
         <state relative-caret-position="57">
           <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding>
-            <marker date="1505344599754" expanded="true" signature="10008:10017" ph="..." />
+            <marker date="1506944925272" expanded="true" signature="9977:9999" ph="..." />
           </folding>
         </state>
       </provider>
@@ -479,7 +456,7 @@
         <state relative-caret-position="703">
           <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="30" />
           <folding>
-            <marker date="1505344599754" expanded="true" signature="10008:10017" ph="..." />
+            <marker date="1506944925272" expanded="true" signature="9977:9999" ph="..." />
           </folding>
         </state>
       </provider>
@@ -519,7 +496,7 @@
         <state relative-caret-position="703">
           <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="30" />
           <folding>
-            <marker date="1505344599754" expanded="true" signature="10008:10017" ph="..." />
+            <marker date="1506944925272" expanded="true" signature="9977:9999" ph="..." />
           </folding>
         </state>
       </provider>
@@ -609,9 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="376" column="12" lean-forward="false" selection-start-line="376" selection-start-column="12" selection-end-line="376" selection-end-column="12" />
-          <folding>
-            <marker date="1505170285695" expanded="true" signature="14408:14420" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,25 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-resume.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="41" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/formatting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/formatting.php" />
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-blog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="169">
           <caret line="100" column="78" lean-forward="false" selection-start-line="100" selection-start-column="78" selection-end-line="100" selection-end-column="78" />
           <folding />
         </state>
@@ -681,35 +640,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="1189" column="22" lean-forward="true" selection-start-line="1189" selection-start-column="22" selection-end-line="1189" selection-end-column="22" />
+        <state relative-caret-position="19">
+          <caret line="569" column="25" lean-forward="false" selection-start-line="569" selection-start-column="25" selection-end-line="569" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/functions.php">
+    <entry file="file://$PROJECT_DIR$/www/wp-comments-post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="951">
-          <caret line="250" column="0" lean-forward="true" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+        <state relative-caret-position="-570">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-includes/comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505344599754" expanded="true" signature="10008:10017" ph="..." />
+            <marker date="1506188054051" expanded="true" signature="4100:4198" ph="SELECT comme... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="4332:4467" ph="SELECT comme... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="10089:10201" ph="SELECT comme... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="10276:10384" ph="SELECT comme... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="10516:10658" ph="SELECT DATE_... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="11601:11709" ph="SELECT comme... $" />
+            <marker date="1506188054051" expanded="true" signature="20356:20503" ph="SELECT comme... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="23905:23963" ph="SELECT post_... wp_posts" />
+            <marker date="1506188054051" expanded="true" signature="27000:27178" ph="SELECT `comm... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="42142:42206" ph="SELECT comme... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="42502:42562" ph="SELECT meta_... wp_commentmeta" />
+            <marker date="1506188054051" expanded="true" signature="77956:78046" ph="SELECT COUNT... wp_comments" />
+            <marker date="1506188054051" expanded="true" signature="81669:81843" ph="SELECT ID, p... $" />
+            <marker date="1506188054051" expanded="true" signature="82006:82183" ph="SELECT ID, p... $" />
+            <marker date="1506188054051" expanded="true" signature="82357:82432" ph="SELECT ID FR... wp_posts" />
+            <marker date="1506188054051" expanded="true" signature="84034:84117" ph="UPDATE wp_po... " />
+            <marker date="1506188054051" expanded="true" signature="89361:89432" ph="UPDATE wp_po... " />
+            <marker date="1506188054051" expanded="true" signature="89497:89575" ph="UPDATE wp_po... " />
+            <marker date="1506188054051" expanded="true" signature="93444:93514" ph="SELECT wp_co... wp_comments" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/content-single-post.php">
+    <entry file="file://$PROJECT_DIR$/www/wp-includes/comment-template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="122" column="16" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="124" selection-end-column="20" />
+        <state relative-caret-position="-4560">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="131">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/template-resume.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/content-single-post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="109" column="51" lean-forward="false" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/customtheme/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35">
+          <caret line="213" column="95" lean-forward="true" selection-start-line="213" selection-start-column="95" selection-end-line="213" selection-end-column="151" />
+          <folding>
+            <marker date="1506944925272" expanded="true" signature="9977:9999" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -8,7 +8,7 @@ $avatar = get_field('image_avatar','options');
     <div class="avatar-bg">
         <div class="avatar-photo">
             <?php if(!empty($avatar)){?>
-            <img src="<?php echo $avatar;?>">
+            	<img src="<?php echo $avatar;?>">
             <?php }?>
         </div>
     </div>

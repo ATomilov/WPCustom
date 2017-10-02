@@ -30,25 +30,11 @@ $single_posts_image_url = wp_get_attachment_image_src($single_posts_image_id,"bl
 							<div class="standart-post-number-of-comments"><?php echo strtolower(comments_number());?></div>
 						</div>
 					</div>
-					<div class="standart-post-description">
-						<p>This is Photoshop's version of Lorem Ipsum. Proin gravida
-							nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-							quis bibendum auctor, nisi elit consequat ipsum, n ec sagittis
-							sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
-							a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
-							odio tincidunt auctor a ornare odio.</p>
-
-						<p>Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
-							ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
-							Duis sed odio sit amet nibh vulputate cursus. Proin gravida nibh vel velit auctor aliquet.
-							Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-							sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
-							accumsan ipsum velit.</p>
-					</div>
+					<div class="standart-post-description"><?php the_content();?></div>
 				</div>
 				<div class="border-under-single-post-text"></div>
 				<?php comments_template(); ?>
-				<div class="pt-title single-post message"><?php echo strtolower(comments_number());?></div>
+				<!--<div class="pt-title single-post message"><?php echo strtolower(comments_number());?></div>
 				<div class="comment-pattern">
 					<div class="border-for-avatar">
 						<div class="avatar">
@@ -122,7 +108,7 @@ $single_posts_image_url = wp_get_attachment_image_src($single_posts_image_id,"bl
 				<textarea class="message-main-text" rows="11" cols="49"></textarea>
 				<a class="send-message" href="javascript:void(0)">
 					<div class="send-message-button">Add a Comment</div>
-				</a>
+				</a>-->
 
 			</div>
 		</div>

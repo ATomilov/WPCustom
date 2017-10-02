@@ -558,12 +558,8 @@ a.filter-portfolio {
 }
 
 .grid-work-item:hover .info-picture-portfolio {
-    display: block;
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-    animation: fadein 1s;
+    visibility: visible;
+    opacity: 1;
 }
 
 @keyframes fadein {
@@ -577,7 +573,10 @@ a.filter-portfolio {
   width: 200px;
   height: 160px;
   top: 0;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 800ms, visibility 800ms;
+  transition: opacity 800ms, visibility 800ms;
 }
 
 .taxonomy-text {
@@ -1184,6 +1183,7 @@ a.send-message {
 
 .avatar img {
     margin: 8px 9px 10px 9px;
+    width: 62px;
 }
 
 .comment-pattern {

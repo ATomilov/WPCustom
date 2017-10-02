@@ -4,12 +4,12 @@
 
 	<?php } else { ?>
 			<?php
-			function verstaka_comment($comment, $args, $depth){
+			function custom_comment($comment, $args, $depth){
 			$GLOBALS['comment'] = $comment; ?>
 					<div class="comment-pattern">
 						<div class="border-for-avatar">
 							<div class="avatar">
-								<?php echo get_avatar($comment,$size='74',$default='<path_to_url>' ); ?>
+                                <img src="<?php echo get_avatar_url($comment);?>">
 							</div>
 						</div>
 						<div class="comment-info">
@@ -27,7 +27,7 @@
 				<?php }
 				$args = array(
 					'reply_text' => 'reply',
-					'callback' => 'verstaka_comment'
+					'callback' => 'custom_comment'
 				);
 				wp_list_comments($args);
 				?>
